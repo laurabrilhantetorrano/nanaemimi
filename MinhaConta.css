@@ -1,0 +1,220 @@
+.conta-pagina {
+  flex: 1;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 42px 22px 70px;
+  font-family: Arial, sans-serif;
+}
+
+.conta-topo {
+  margin-bottom: 18px;
+}
+
+.conta-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #222;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.conta-voltar:hover {
+  color: #e23f80;
+}
+
+.conta-card {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.conta-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.conta-icone {
+  width: 74px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #e33e7f;
+  background: #fff0f6;
+  flex-shrink: 0;
+}
+
+.conta-saudacao {
+  margin: 0 0 3px;
+  color: #e33e7f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.conta-cabecalho h1 {
+  margin: 0;
+  color: #222;
+  font-size: 30px;
+}
+
+.conta-cabecalho span {
+  display: block;
+  margin-top: 4px;
+  color: #777;
+}
+
+.conta-divisor {
+  height: 1px;
+  background: #eeeeee;
+  margin: 25px 0;
+}
+
+.conta-dados {
+  display: grid;
+  gap: 18px;
+}
+
+.dado {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dado span {
+  color: #777;
+  font-size: 13px;
+}
+
+.dado strong {
+  color: #222;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.conta-carrinho-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px;
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  color: #222;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.conta-carrinho-card:hover {
+  border-color: #e33e7f;
+  background: #fff8fb;
+}
+
+.conta-carrinho-icone {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e33e7f;
+  color: white;
+  border-radius: 10px;
+}
+
+.conta-carrinho-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.conta-carrinho-info strong {
+  font-size: 16px;
+}
+
+.conta-carrinho-info span {
+  color: #777;
+  font-size: 13px;
+}
+
+.conta-carrinho-seta {
+  font-size: 22px;
+  color: #e33e7f;
+}
+
+.btn-sair-conta {
+  width: 100%;
+  margin-top: 25px;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid #e23f80;
+  border-radius: 9px;
+  background: #fff;
+  color: #d72f70;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-sair-conta:hover {
+  background: #fff0f6;
+}
+
+.conta-nao-logado {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 40px 25px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 16px;
+  background: white;
+}
+
+.conta-nao-logado svg {
+  color: #e33e7f;
+}
+
+.conta-nao-logado h1 {
+  margin: 15px 0 8px;
+}
+
+.conta-nao-logado p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.conta-botao-principal {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #e33e7f;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .conta-pagina {
+    padding: 25px 14px 50px;
+  }
+
+  .conta-card {
+    padding: 22px 18px;
+  }
+
+  .conta-cabecalho h1 {
+    font-size: 25px;
+  }
+}
+
+.conta-admin-card .conta-carrinho-icone { background: #111; }

@@ -1,0 +1,85 @@
+.contato-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.contato-conteudo-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contato-conteudo-central h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contato-texto {
+  max-width: 650px;
+  margin-bottom: 30px;
+}
+
+.contato-texto p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.info-cards-central {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 30px;
+}
+
+.card-item-central {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #faf5f3;
+  padding: 16px 20px;
+  border-radius: 8px;
+  color: #333;
+  text-align: left;
+}
+
+.card-item-central svg {
+  color: #D87093;
+  flex-shrink: 0;
+}
+
+.card-item-central strong {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.card-item-central p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.slogan {
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  text-align: center;
+}

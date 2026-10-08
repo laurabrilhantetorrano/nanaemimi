@@ -1,0 +1,134 @@
+/* Página Sobre Nós */
+
+.sobre-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 25px 40px 50px;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Botão voltar */
+
+.btn-voltar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.btn-voltar:hover {
+  color: #e83f87;
+}
+
+
+/* Título */
+
+.sobre-container h1 {
+  text-align: center;
+  color: #e83f87;
+  font-size: 25px;
+  margin: 0 0 35px;
+}
+
+
+/* Área do texto + imagem */
+
+.sobre-conteudo {
+  display: flex;
+  align-items: flex-start;
+  gap: 45px;
+}
+
+
+/* Texto */
+
+.sobre-texto {
+  flex: 1;
+  min-width: 500px;
+}
+
+.sobre-texto p {
+  margin: 0 0 20px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  text-align: left;
+}
+
+
+/* Imagem */
+
+.sobre-imagem {
+  width: 400px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sobre-imagem img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  display: block;
+  border-radius: 12px;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 1000px) {
+
+  .sobre-container {
+    padding: 25px 25px 40px;
+  }
+
+  .sobre-conteudo {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sobre-texto {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .sobre-imagem {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sobre-imagem img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+/* Celular */
+
+@media (max-width: 500px) {
+
+  .sobre-container {
+    padding: 20px;
+  }
+
+  .sobre-container h1 {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+
+  .sobre-texto p {
+    font-size: 14px;
+  }
+
+  .sobre-imagem img {
+    width: 300px;
+    max-width: 100%;
+  }
+}

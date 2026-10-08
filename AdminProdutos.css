@@ -1,0 +1,38 @@
+.admin-pagina { min-height: 100vh; background: #fff; font-family: Arial, sans-serif; }
+.admin-container { max-width: 1180px; margin: 0 auto; padding: 32px 20px 70px; }
+.admin-topo { margin-bottom: 25px; }
+.admin-voltar { display: inline-flex; align-items: center; gap: 7px; color: #333; text-decoration: none; font-weight: 700; margin-bottom: 22px; }
+.admin-topo > div > span { color: #df3e80; font-size: 11px; font-weight: 800; letter-spacing: 1px; }
+.admin-topo h1 { margin: 5px 0; font-size: 31px; }
+.admin-topo p { margin: 0; color: #666; }
+.admin-form-card, .admin-lista-card { border: 1px solid #eadde4; border-radius: 16px; padding: 24px; background: #fff; box-shadow: 0 7px 25px rgba(0,0,0,.05); margin-bottom: 25px; }
+.admin-card-title { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 20px; }
+.admin-card-title h2 { margin: 0; font-size: 21px; }
+.admin-card-title button { display: flex; align-items: center; gap: 5px; border: 1px solid #ddd; background: #fff; padding: 8px 11px; border-radius: 7px; cursor: pointer; }
+.admin-card-title > span { color: #777; font-size: 13px; }
+.admin-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+.admin-form label { display: flex; flex-direction: column; gap: 6px; color: #444; font-weight: 700; font-size: 13px; }
+.admin-form input, .admin-form textarea { width: 100%; border: 1px solid #d8d8d8; border-radius: 8px; padding: 11px 12px; font: inherit; font-weight: 400; outline: none; background: #fff; }
+.admin-form input:focus, .admin-form textarea:focus { border-color: #df3e80; }
+.admin-form input[type=file] { padding: 8px; }
+.admin-campo-grande { grid-column: 1 / -1; }
+.admin-arquivo { grid-column: 1 / -1; margin: 0; color: #666; font-size: 13px; }
+.admin-erro, .admin-sucesso { grid-column: 1 / -1; margin: 0; font-weight: 700; }
+.admin-erro { color: #b00020; }
+.admin-sucesso { color: #258b4b; }
+.admin-salvar { grid-column: 1 / -1; border: 0; border-radius: 8px; padding: 13px; background: #df3e80; color: #fff; font-weight: 800; font-size: 15px; cursor: pointer; }
+.admin-salvar:disabled { opacity: .6; cursor: not-allowed; }
+.admin-produtos-lista { display: grid; gap: 12px; }
+.admin-produto { display: flex; align-items: center; gap: 15px; padding: 12px; border: 1px solid #eee; border-radius: 11px; }
+.admin-produto-imagem { width: 85px; height: 85px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; background: #fafafa; border-radius: 8px; overflow: hidden; }
+.admin-produto-imagem img { width: 100%; height: 100%; object-fit: contain; }
+.admin-produto-imagem span { color: #999; font-size: 11px; }
+.admin-produto-info { flex: 1; display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.admin-produto-info strong { font-size: 16px; }
+.admin-produto-info span { font-size: 14px; }
+.admin-produto-info small { color: #777; }
+.admin-produto-acoes { display: flex; gap: 8px; }
+.admin-produto-acoes button { display: inline-flex; align-items: center; gap: 5px; padding: 9px 11px; border: 1px solid #ddd; border-radius: 7px; background: #fff; cursor: pointer; font-weight: 700; }
+.admin-produto-acoes button:hover { border-color: #df3e80; }
+.admin-produto-acoes .perigo { color: #c62828; }
+@media (max-width: 700px) { .admin-form { grid-template-columns: 1fr; } .admin-campo-grande, .admin-arquivo, .admin-erro, .admin-sucesso, .admin-salvar { grid-column: auto; } .admin-produto { align-items: flex-start; flex-wrap: wrap; } .admin-produto-acoes { width: 100%; } .admin-produto-acoes button { flex: 1; justify-content: center; } }
